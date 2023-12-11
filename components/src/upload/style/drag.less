@@ -1,0 +1,31 @@
+@import '../../global.less';
+
+.n-upload-dragger {
+  background-color: #fff;
+  border: 1px dashed #d9d9d9;
+  border-radius: 6px;
+  box-sizing: border-box;
+  width: 360px;
+  height: 180px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    border: 1px dashed #colors[primary];
+  }
+  .n-upload-content {
+    text-align: center;
+    color: #606266;
+    .n-upload-icon {
+      font-size: 20px;
+    }
+    em {
+      color: #colors[primary];
+      font-style: normal;
+    }
+  }
+}
+.n-upload-draggerenter {
+  border: 1px dashed #colors[primary];
+}

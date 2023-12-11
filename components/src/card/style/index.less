@@ -1,0 +1,46 @@
+@import '../../global.less';
+@box-shadow:2px 2px 18px 3px @opacity-dark-1;
+
+.n-card {
+  border: @border;
+  border-radius: 4px;
+
+  .n-card-header {
+    border-bottom: @border;
+    height: 48px;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justifn-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    color: #2c405a;
+
+    .n-card-title {
+      font-weight: 600;
+      color: #5d5d5d;
+    }
+
+    .n-card-subtitle {
+      font-size: 14px;
+    }
+  }
+
+  .n-card-body {
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #303133;
+  }
+}
+
+.n-card-shadow-always {
+  box-shadow: @box-shadow;
+}
+
+.n-card-shadow-hover {
+  transition: box-shadow 0.25s;
+  &:hover {
+    box-shadow: @box-shadow;
+  }
+}

@@ -1,0 +1,76 @@
+@import '../../global.less';
+
+.n-radio {
+  margin-right: 19px;
+  //不允许选中文本
+  user-select: none;
+
+  // 选择的圆圈
+  .n-radio-o {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border: @border;
+    vertical-align: middle;
+    border-radius: 50%;
+    transition: 0.3s;
+
+    input {
+      display: none !important;
+    }
+  }
+
+  // 小点点
+  .n-radio-o::after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  // 文字
+  .n-radio-text {
+    font-size: 14px;
+    margin-left: 6px;
+    transition: 0.3s;
+  }
+
+  // 选中的
+  .n-radio-hig {
+    background-color: #colors[primary];
+    border: 1px solid #colors[primary];
+    position: relative;
+  }
+
+  .n-radio-disabled {
+    background-color: #colors[info-light];
+    border: 1px solid #colors[info-light];
+    position: relative;
+  }
+}
+
+.n-radio-border {
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.n-radio-large {
+  padding: 7px 20px 10px 20px;
+}
+
+.n-radio-medium {
+  padding: 5px 17px 8px 17px;
+}
+
+.n-radio-small {
+  padding: 3px 14px 6px 14px;
+}
+
+.n-radio-mini {
+  padding: 1px 11px 4px 11px;
+}

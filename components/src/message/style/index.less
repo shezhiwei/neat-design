@@ -1,0 +1,59 @@
+@import '../../global.less';
+
+.n-message {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  z-index: 50;
+  left: 50%;
+  font-size: 14px;
+  border-radius: 0.3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  transform: translateX(-50%);
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.n-message-content {
+  display: inline-block;
+}
+.n-message .before-icon {
+  margin-right: 10px;
+}
+.n-message .close-icon {
+  font-size: 12px;
+  margin-left: 12px;
+  color: #colors[info];
+  cursor: pointer;
+}
+
+.n-message.info {
+  color: #colors[info];
+  background: #colors[info-plain];
+  border: 1px solid #colors[info-lighter];
+}
+
+.n-message.danger {
+  color: #colors[danger];
+  background: #colors[danger-plain];
+  border: 1px solid #colors[danger-lighter];
+}
+
+.n-message.success {
+  color: #colors[success];
+  background: #colors[success-plain];
+  border: 1px solid #colors[success-lighter];
+}
+
+.n-message.warning {
+  color: #colors[warn];
+  background: #colors[warn-plain];
+  border: 1px solid #colors[warn-lighter];
+}
+
+.n-message-fade-enter-from,
+.n-message-fade-leave-to {
+  transform: translateX(-50%);
+  opacity: 0;
+}

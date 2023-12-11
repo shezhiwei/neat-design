@@ -1,0 +1,130 @@
+@import '../../global.less';
+
+.n-drawer-warpper {
+  position: fixed;
+  z-index: 2022;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: @opacity-dark-3;
+  user-select: none;
+  .n-drawer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    text-align: left;
+  }
+  .n-drawer-top {
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .n-drawer-left {
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .n-drawer-bottom {
+    bottom: 0px;
+    right: 0;
+    left: 0;
+  }
+
+  .n-drawer-,
+  .n-drawer-right {
+    right: 0px;
+    top: 0;
+    bottom: 0;
+  }
+  .n-drawer-header {
+    display: flex;
+    padding: 20px 20px 15px;
+    position: relative;
+
+    .n-drawer-title {
+      font-size: 18px;
+      color: #303133;
+    }
+    .n-drawer-close {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      &:hover {
+        color: #409eff;
+      }
+    }
+  }
+
+  .n-drawer-body {
+    flex: 1;
+    padding: 0 20px;
+  }
+  .n-drawer-footer {
+    padding: 10px 20px 20px;
+    text-align: right;
+    & > * {
+      margin-left: 10px;
+    }
+  }
+}
+
+.n-drawer-fade-top-enter-to,
+.n-drawer-fade-top-leave-from,
+.n-drawer-fade-left-enter-to,
+.n-drawer-fade-left-leave-from,
+.n-drawer-fade-bottom-enter-to,
+.n-drawer-fade-bottom-leave-from,
+.n-drawer-fade-right-enter-to,
+.n-drawer-fade-right-leave-from {
+  transition: all 0.2s linear;
+  opacity: 1;
+}
+
+.n-drawer-fade-top-enter-from,
+.n-drawer-fade-top-leave-to,
+.n-drawer-fade-left-enter-from,
+.n-drawer-fade-left-leave-to,
+.n-drawer-fade-bottom-enter-from,
+.n-drawer-fade-bottom-leave-to,
+.n-drawer-fade-right-enter-from,
+.n-drawer-fade-right-leave-to {
+  transition: all 0.2s linear;
+  opacity: 0;
+}
+
+.transition-inner {
+  transition: all 0.2s linear;
+}
+
+.n-drawer-fade-right-enter-from .transition-inner,
+.n-drawer-fade-right-leave-to .transition-inner {
+  transform: translatex(100%);
+  transition: all 0.2s linear;
+  opacity: 0;
+}
+.n-drawer-fade-left-enter-from .transition-inner,
+.n-drawer-fade-left-leave-to .transition-inner {
+  transform: translatex(-100%);
+  transition: all 0.2s linear;
+  opacity: 0;
+}
+
+.n-drawer-fade-top-enter-from .transition-inner,
+.n-drawer-fade-top-leave-to .transition-inner {
+  transform: translateY(-100%);
+  transition: all 0.2s linear;
+  opacity: 0;
+}
+
+.n-drawer-fade-bottom-enter-from .transition-inner,
+.n-drawer-fade-bottom-leave-to .transition-inner {
+  transform: translateY(100%);
+  transition: all 0.2s linear;
+  opacity: 0;
+}

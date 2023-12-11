@@ -1,0 +1,155 @@
+@import '../../global.less';
+
+.n-input {
+  font-size: 14px;
+  display: inline-block;
+  position: relative;
+
+  .n-input-inner {
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #dcdfe6;
+    box-sizing: border-box;
+    color: #606266;
+    font-size: inherit;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    outline: none;
+    padding: 0 15px;
+    width: 100%;
+
+    &::placeholder {
+      color: #c2c2ca;
+    }
+
+    &:hover {
+      border: 1px solid #colors[primary];
+    }
+
+    &:focus {
+      border: 1px solid #colors[primary];
+      box-shadow: 0 0 3px #colors[primary];
+    }
+  }
+
+  input[type='password']::-ms-reveal {
+    display: none;
+  }
+
+  .n-input-suffix,
+  .n-input-prefix {
+    position: absolute;
+    right: 10px;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #c0c4cc;
+    font-size: 15px;
+  }
+
+  .no-cursor {
+    cursor: default;
+  }
+
+  .n-input--prefix.n-input-inner {
+    padding-left: 30px;
+  }
+  .n-input--suffix.n-input-inner {
+    padding-right: 30px;
+  }
+  .n-input-prefix {
+    position: absolute;
+    width: 20px;
+    cursor: default;
+    left: 10px;
+  }
+}
+
+//禁用
+.n-input.is-disabled {
+  .n-input-inner {
+    background-color: #f5f7fa;
+    border-color: #e4e7ed;
+    color: #c0c4cc;
+    cursor: not-allowed;
+
+    &::placeholder {
+      color: #c3c4cc;
+    }
+  }
+}
+
+//size
+.n-input.n-input--medium {
+  .n-input-inner {
+    height: 36px;
+    font-size: 14px;
+  }
+}
+
+.n-input.n-input--small {
+  .n-input-inner {
+    height: 32px;
+    font-size: 13px;
+  }
+}
+
+.n-input.n-input--mini {
+  .n-input-inner {
+    height: 28px;
+    font-size: 12px;
+  }
+}
+
+//复合型输入框
+.n-input.n-input-group.n-input-append,
+.n-input.n-input-group.n-input-prepend {
+  line-height: normal;
+  display: inline-table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+
+  .n-input-inner {
+    border-radius: 0 4px 4px 0;
+  }
+
+  //复合输入框
+  .n-input-prepend,
+  .n-input-append {
+    background-color: #f5f7fa;
+    color: #909399;
+    vertical-align: middle;
+    display: table-cell;
+    position: relative;
+    border: 1px solid #dcdfe6;
+    border-radius: 4 0px 0px 4px;
+    padding: 0 20px;
+    width: 1px;
+    white-space: nowrap;
+  }
+
+  .n-input-append {
+    border-radius: 0 4px 4px 0px;
+  }
+}
+
+.n-input.n-input-group.n-input-append {
+  .n-input-inner {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.1s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
