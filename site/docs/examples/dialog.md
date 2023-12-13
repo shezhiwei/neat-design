@@ -197,7 +197,7 @@ const handleClose = () => {
   .mn-header{
     width: 100%;
     display: flex;
-    justifn-content: space-between;
+    justify-content: space-between;
     align-items: center;
     font-size:20px;
     font-weight:'bold';

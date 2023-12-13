@@ -264,7 +264,7 @@ function handler() {
 .popoverPosition .n-button{
   width:100px;
   display: flex;
-  justifn-content: center;
+  justify-content: center;
 }
 .top-start{
   position:absolute;

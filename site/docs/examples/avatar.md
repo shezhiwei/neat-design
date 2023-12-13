@@ -169,7 +169,7 @@
   border: 1px solid #eee;
   display: flex;
   flex-direction: column;
-  justifn-content: center;
+  justify-content: center;
   align-items: center;
 }
 .fitBox .item .text {

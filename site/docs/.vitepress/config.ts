@@ -1,6 +1,6 @@
 const argv = require('minimist')(process.argv.slice(2));
 const build = argv.build || false;
-const baseBuild = build ? '/young-design-docs/' : '/';
+const baseBuild = build ? '/neat-design-docs/' : '/';
 
 export default {
   base: baseBuild,
@@ -28,16 +28,7 @@ export default {
               link: '/guild/quickstart',
             },
           ],
-        },
-        {
-          text: '进阶',
-          items: [
-            {
-              text: '开发中',
-              link: '/guild/advanced',
-            },
-          ],
-        },
+        }
       ],
       '/examples/': [
         {
