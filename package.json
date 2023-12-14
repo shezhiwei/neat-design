@@ -9,7 +9,7 @@
     "build": "gulp -f components/script/build/gulpfile.ts",
     "publish:comp": "gulp -f components/script/publish/gulpfile.ts",
     "start:docs": "pnpm run --filter site docs:dev",
-    "build:docs": "cd site  && ./deploy.sh"
+    "build:docs": "cd site  && deploy.sh"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,7 @@
     "@types/gulp-less": "^0.0.32",
     "@types/less": "^3.0.3",
     "@vitejs/plugin-vue": "^3.0.1",
+    "@vue/shared": "^3.3.11",
     "cpy": "^9.0.1",
     "fast-glob": "^3.2.11",
     "gulp": "^4.0.2",

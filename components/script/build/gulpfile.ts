@@ -6,7 +6,7 @@ export default series(
     async () => removeDist(),
     parallel(
         async () => buildStyle(),
-        async () => buildComponent()
+        async () => buildComponent(),  
     )
 )
 

@@ -11,13 +11,12 @@ cd docs/.vitepress/dist
 
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
-
-git init
 git add -A
 git commit -m 'deploy'
 
+
 # 如果部署到 https://<USERNAME>.github.io
-git push -f https://gitee.com/shezhiwei/neat-design.git master
+git push -f https://github.com/shezhiwei/neat-design-docs.git master:gh-pages
 
 # 如果是部署到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages

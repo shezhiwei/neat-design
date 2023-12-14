@@ -5,7 +5,7 @@ import autoprefixer from 'gulp-autoprefixer'
 import run from "../utils/run"
 
 //删除dist
-export const removeDist = () => {
+export const removeDist = () => { 
   return run(`rm -rf ${componentPath}/dist`, componentPath)
 }
 

@@ -1,11 +1,11 @@
 {
   "name": "neat-design",
-  "version": "1.0.0",
+  "version": "1.0.7",
   "description": "monorepo+vite+vue3组件库",
-  "homepage": "https://gitee.com/shezhiwei/neat-design.git",
+  "homepage": "https://shezhiwei.github.io/neat-design-docs/",
   "repository": {
     "type": "git",
-    "url": "https://gitee.com/shezhiwei/neat-design.git"
+    "url": "https://github.com/shezhiwei/neat-design.git"
   },
   "main": "lib/index.js",
   "module": "es/index.js",

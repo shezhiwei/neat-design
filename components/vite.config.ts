@@ -26,7 +26,7 @@ export default defineConfig(
             preserveModules: true,
             //配置打包根目录
             dir: resolve(__dirname, './dist/es'),
-            preserveModulesRoot: resolve(__dirname, 'src')
+            // preserveModulesRoot: resolve(__dirname, 'src')
           },
           {
             format: 'cjs',
@@ -36,7 +36,7 @@ export default defineConfig(
             preserveModules: true,
             //配置打包根目录
             dir: resolve(__dirname, './dist/lib'),
-            preserveModulesRoot: resolve(__dirname, 'src')
+            // preserveModulesRoot: resolve(__dirname, 'src')
           }
         ]
       },

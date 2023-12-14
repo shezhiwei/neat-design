@@ -2,7 +2,7 @@
 
 基于 vue3 setup+monorepo+vite 实现的组件库
 
-文档地址 ： [neat-design gitee page 部署地址](https://shezhiwei.github.io/neat-design-docs/)
+文档地址 ： [neat-design github page 部署地址](https://shezhiwei.github.io/neat-design-docs/)
 
 # 安装
 

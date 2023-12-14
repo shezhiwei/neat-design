@@ -13,7 +13,7 @@ export default {
       { text: '指南', link: '/guild/installation' },
       { text: '组件', link: '/examples/button' },
     ],
-    socialLinks: [{ icon: 'github', link: 'https://gitee.com/shezhiwei/neat-design.git' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/shezhiwei/neat-design.git' }],
     sidebar: {
       '/guild/': [
         {
