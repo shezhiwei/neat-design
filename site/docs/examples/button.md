@@ -62,9 +62,7 @@
     <n-button type="danger" round>危险按钮</n-button>
   </div>
 </template>
-<script lang="ts" setup>
-import { n-button } from "neat-design";
-</script>
+
 <style>
 .n-button {
   margin-right: 10px;
@@ -116,9 +114,7 @@ import { n-button } from "neat-design";
     <n-button type="danger" disabled plain>危险按钮</n-button>
   </div>
 </template>
-<script lang="ts" setup>
-import { n-button } from "neat-design";
-</script>
+
 <style>
 .n-button {
   margin-right: 10px;
@@ -150,9 +146,7 @@ import { n-button } from "neat-design";
     <n-button size="mini">超小按钮</n-button>
   </div>
 </template>
-<script lang="ts" setup>
-import { n-button } from "neat-design";
-</script>
+
 <style>
 .n-button {
   margin-right: 10px;
@@ -202,9 +196,7 @@ import { n-button } from "neat-design";
     />
   </div>
 </template>
-<script lang="ts" setup>
-import { n-button } from "neat-design";
-</script>
+
 <style>
 .n-button {
   margin-right: 10px;

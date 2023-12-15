@@ -64,7 +64,7 @@
   </template>
 
   <template v-slot:footer>
-    <span type="danger">2022-02-12</span>
+    <span type="danger">2023-11-11</span>
   </template>
 </n-info>
 
@@ -91,7 +91,7 @@
   </template>
 
   <template v-slot:footer>
-    <span type="danger">2022-02-12</span>
+    <span type="danger">2023-11-11</span>
   </template>
 </n-info>
 ```
