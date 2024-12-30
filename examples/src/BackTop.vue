@@ -8,4 +8,6 @@
   <n-back-top>Top</n-back-top>
   <n-back-top>Top</n-back-top>
   <n-back-top>Top</n-back-top>
+  <n-back-top>测试</n-back-top>
+  <n-back-top>测试</n-back-top>
 </template>
